@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ResumeCard from "./ResumeCard";
 
-const Education = () => {
+const Certification = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -13,26 +13,20 @@ const Education = () => {
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2008 - 2024</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Professional Certifications</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="BSc in Information Technology"
-            subTitle="Internation University of East Africa (2015 - 2018)"
-            result="4.56/5"
-            des="The training provided by universities in order to prepare people to work as a professional information technology specialist."
+            title="ALX"
+            subTitle="ALX Foundation Software Engineering Course (2022-2023)"
+            result="Certified"
+            des="Training with specialization on frontend technologies such as React, JavaScript, HTML and CSS."
           />
           <ResumeCard
-            title="Diploma in Information Technology and Communication"
-            subTitle="Informatics Academy (2014 - 2015)"
-            result="4.7/5"
-            des="International diploma in tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
-          />
-          <ResumeCard
-            title="Secondary School Education"
-            subTitle="Government Secondary School, Tudun-wada, Abuja (2008 -2013)"
-            result="9 Credits"
-            des="Secondary education or post-primary education."
+            title="NITDA"
+            subTitle="Nigerian Information Technology Development Agency (Nov - Dec 22)"
+            result="Certified"
+            des="Software development training with specialization on Python."
           />
         </div>
       </div>
@@ -68,4 +62,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Certification;
